@@ -1,0 +1,104 @@
+p.error {
+  display: none;
+}
+
+p.error, p.footer {
+  text-align: center;
+  color: #ccc;
+  padding: 5px;
+}
+
+p.footer {
+  background: #444449;
+  padding: 5px auto;
+  margin: 0;
+}
+
+p.footer a, p.error a {
+  display: contents;
+  font-weight: bold;
+}
+
+.visually-hidden,
+.menu-item-title {
+  display: none;
+}
+
+.menu-item--expanded:not(.expanded) .toolbar-menu {
+  display: none;
+}
+
+.menu-item--expanded {
+  position: relative;
+}
+
+.menu-item--expanded::before {
+  content: "↪";
+  width: 4px;
+  height: 4px;
+  color: #fff;
+  font-size: 12pt;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2a2a2d;
+}
+
+body {
+  padding: 0;
+  min-width: 350px;
+}
+
+body > .toolbar-menu {
+  padding: 0;
+  min-width: 300px;
+}
+
+.toolbar-menu {
+  background-color: #2a2a2d;
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+}
+
+.menu-item--expanded.expanded > a {
+  background-color: #444449;
+  pointer-events: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 30px;
+  color: #ccc;
+  background-color: #2a2a2d;
+  white-space: nowrap;
+}
+
+a:hover {
+  background-color: #444449;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2a2a2d; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444449; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
